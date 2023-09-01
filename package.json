@@ -2,9 +2,12 @@
   "name": "react_portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Pradhive.github.io/react_portfolio",
   "type": "module",
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -31,6 +34,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.0.0",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.9"
   }
