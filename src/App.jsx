@@ -8,13 +8,12 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Bot from "./Components/Bot";
-import Circle from './Components/Circle';
-
+import Cursor from "./Components/Cursor"
 
 const App = () => {
   return (
     <div>
-      <Circle/>
+      <Cursor/>
       <Navbar/>
       <Bot/>
       <Hero/>
