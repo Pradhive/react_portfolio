@@ -34,8 +34,8 @@ const Project = () => {
       img: project4,
       name: "React Nav",
       github_link:
-        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
-      live_link: "https://reacttailwindnavbar.netlify.app",
+        "https://github.com/Pradhive/Navbar",
+      live_link: "https://navbar-pradhive.netlify.app/",
     },
     {
       img: project5,
