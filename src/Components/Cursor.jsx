@@ -1,13 +1,14 @@
 import React, { useLayoutEffect, useRef } from "react";
+import useMobileView from "./useMobileView";
 
 function Cursor() {
+  const isMobileView = useMobileView()
   const circleRefs = useRef([]);
   const coords = { x: 0, y: 0 };
 
   useLayoutEffect(() => {
     circleRefs.current = Array.from(document.querySelectorAll(".circle"));
 
-    // Initialize the positions of the circles
     circleRefs.current.forEach((circle, index) => {
       circle.x = 0;
       circle.y = 0;
@@ -48,11 +49,13 @@ function Cursor() {
   };
 
   return (
-    <div>
+    <>
+    {!isMobileView?(<div>
       {Array.from({ length: 18 }).map((_, index) => (
         <div className="circle" key={index}></div>
       ))}
-    </div>
+    </div>):(<></>)}
+    </>
   );
 }
 

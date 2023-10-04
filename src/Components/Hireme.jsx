@@ -1,5 +1,5 @@
 import React from "react";
-import hireMe from "../assets/images/hireMe.png"
+import hireMe from "../assets/images/hero.png"
 
 function Hireme() {
 
@@ -11,20 +11,20 @@ function Hireme() {
   };
 
   return (
-    <section id="section" className="py-10 px-3 text-white">
+    <section id="section" className="bg-gray-200 md:rounded-full py-10 px-3 text-white">
       <div className="text-center">
         <h3 className="text-4xl font-semibold">
-          Hire <span className="text-cyan-600">Me</span>
+          Hire <span className="text-gray-600">Me</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">
-          Do <span className="text-cyan-600 font-bold text-xl">You</span> have
+          Do <span className="text-gray-600 font-bold text-xl">You</span> have
           any work?
         </p>
       </div>
       <div className="bg-gray-700 relative px-8 rounded-2xl py-5 lg:max-w-4xl mx-auto min-h-[24rem] mt-24 flex gap-6 lg:flex-row flex-col-reverse items-center ">
         <div>
           <h2 className="text-2xl font-semibold">
-            Do <span className="text-cyan-600 font-bold text-3xl">You</span> want any work from me?</h2>
+            Do <span className="text-gray-900 font-bold text-3xl">You</span> want any work from me?</h2>
           <p className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-6">
             A Talented Final Year B.Tech student with a strong academic
             background with the ability to think through a problem coupled with

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import AboutP from "../assets/images/about.png"
+import AboutP from "../assets/images/hero.png"
 
 function About() {
   
@@ -87,15 +87,15 @@ function About() {
   }, [isInViewport]);
   
   return (
-    <section id="about" className="">
+    <section id="about" className="bg-gray-200 pt-10 md:rounded-bl-full md:rounded-tr-full">
       <div className="text-center mt-8">
         <h3 className="text-4xl font-semibold">
-          About <span className="text-cyan-600">Me</span>
+          About <span className="text-gray-400">Me</span>
         </h3>
-        <p className="text-gray-400 my-3 text-lg">My Introduction</p>
+        <p className="text-gray-900 my-3 text-lg">My Introduction</p>
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto ">
           <div className="p-2">
-            <div className="text-gray-400 my-3">
+            <div className="text-gray-600 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
                 A Talented Final Year B.Tech student with a strong academic
                 background with the ability to think through a problem coupled
@@ -108,21 +108,21 @@ function About() {
                   <div>
                     <h3 className="md:text-5xl text-2xl font-semibold text-white">
                       {projectCounts}
-                      <span className="text-cyan-600">+</span>{" "}
+                      <span className="text-gray-600">+</span>{" "}
                     </h3>
                     <span className="md:text-3xl ">Projects</span>
                   </div>
                   <div>
                     <h3 className="md:text-5xl text-2xl font-semibold text-white">
                       {ACounts}
-                      <span className="text-cyan-600">+</span>{" "}
+                      <span className="text-gray-600">+</span>{" "}
                     </h3>
                     <span className="md:text-3xl ">Achievements</span>
                   </div>
                   <div>
                     <h3 className="md:text-5xl text-2xl font-semibold text-white">
                       {SCounts}
-                      <span className="text-cyan-600">+</span>{" "}
+                      <span className="text-gray-600">+</span>{" "}
                     </h3>
                     <span className="md:text-3xl ">Skills</span>
                   </div>
@@ -139,7 +139,7 @@ function About() {
           </div>
           <div className="flex-1 flex justify-center items-center md:mt-0 mt-6">
             <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg">
-              <img src={AboutP} alt="" className="w-full object-cover bg-cyan-600 rounded-xl "/>
+              <img src={AboutP} alt="" draggable="false" className="w-full object-cover bg-gray-400 rounded-xl "/>
             </div>
           </div>
         </div>

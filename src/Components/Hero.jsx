@@ -10,6 +10,7 @@ function Hero() {
   const [displayText, setDisplayText] = useState("");
   const [isAdding, setIsAdding] = useState(true);
   const [isWaiting, setIsWaiting] = useState(false);
+  let a = 1010
 
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
@@ -70,23 +71,23 @@ function Hero() {
       <div className="flex-1">
         <div className="md:text-left text-center">
           <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold">
-            <span className="md:text-6xl text-4xl text-cyan-600">
+            <span className="md:text-6xl text-4xl text-black">
               Hello!
               <br />
             </span>
             <div className="flex">
-              My Name is{" "}
-              <div className="dance-animation">
-                <div className="dance-letter-1">P</div>
-                <div className="dance-letter-2">r</div>
-                <div className="dance-letter-3">a</div>
-                <div className="dance-letter-4">d</div>
-                <div className="dance-letter-5">h</div>
-                <div className="dance-letter-6">i</div>
-                <div className="dance-letter-7">v</div>
-                <div className="dance-letter-8">e</div>
-                <div className="dance-letter-9">!</div>
-                <div className="dance-letter-0">!</div>
+              <span className="text-gray-400">My Name is{" "}</span>
+              <div className="dance-animation ">
+                <h1 className="pl-3 dance-letter-1">P</h1>
+                <h1 className="dance-letter-2">r</h1>
+                <h1 className="dance-letter-3">a</h1>
+                <h1 className="dance-letter-4">d</h1>
+                <h1 className="dance-letter-5">h</h1>
+                <h1 className="dance-letter-6">i</h1>
+                <h1 className="dance-letter-7">v</h1>
+                <h1 className="dance-letter-8">e</h1>
+                <h1 className="dance-letter-9">!</h1>
+                <h1 className="pr-3 dance-letter-0">!</h1>
               </div>
             </div>
           </h1>

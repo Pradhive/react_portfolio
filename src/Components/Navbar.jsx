@@ -21,23 +21,23 @@ function Navbar() {
   },[])
 
   return (
-    <nav className={`fixed w-full left-0 top-0 z-[999] ${sticky? "bg-white/60 text-gray-900 duration-1000" : "text-white duration-1000"}`}>
+    <nav className={`fixed w-full left-0 top-0 z-[999] ${sticky? "bg-gray-300 text-black-900 duration-1000" : "text-black duration-1000"}`}>
       <div className="flex items-center justify-between">
         <div className="mx-7">
           <h4 className="text-4xl font-bold">
-            PRA<span className="text-cyan-600">DH</span>IVE
+            PRA<span className="text-gray-600">DH</span>IVE
           </h4>
         </div>
         <div className={`${sticky? "md:bg-white/0 bg-white duration-1000" : "bg-white"} text-gray-900 md:block hidden px-7 py-2 font-medium rounded-bl-full`}>
           <ul className="flex items-center gap-1 py-2 tex-lg">
             {menulink?.map((menu,i) => (
-              <li key={i} className="px-6 hover:text-cyan-600">
+              <li key={i} className="px-6 hover:text-black-600">
                 <a href={menu?.link} >{menu?.name}</a>
               </li>
             ))}
           </ul>
         </div>
-        <div className={`z-[999] text-3xl ${open ? "text-gray-900" : "text-gray-100"} md:hidden m-5`} onClick={()=>setopen(!open)}>
+        <div className={`z-[999] text-3xl ${open ? "text-gray-900" : "text-gray-500"} md:hidden m-5`} onClick={()=>setopen(!open)}>
             <ion-icon name="menu"></ion-icon>
         </div>
         <div className={`md:hidden text-gray-900 absolute w-2/3 h-screen px-7 py-2 font-medium bg-white top-0 duration-300 ${open?"right-0":"right-[-100%]"}`}>
