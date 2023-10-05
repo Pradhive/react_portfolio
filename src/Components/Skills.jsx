@@ -46,7 +46,7 @@ function Skills() {
             <div key={i} className="border-2 border-gray-600 group relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl">
               <div
                 style={{
-                  background: `conic-gradient(rgb(65, 65, 65) ${skill.count}%, #ddd ${skill.count}%)`,
+                  background: `conic-gradient( #ddd ${skill.count}%, rgb(65, 65, 65) ${skill.count}%)`,
                 }}
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
