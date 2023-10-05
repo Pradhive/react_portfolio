@@ -104,7 +104,7 @@ const Contact = () => {
                   onClick={() => {
                     if (contact.logo == "logo-whatsapp") {
                       const urlToOpen =
-                        "https://api.whatsapp.com/send/?phone=+919788162003&text&type=phone_number&app_absent=0";
+                        "https://api.whatsapp.com/send/?phone=919788162003&text&type=phone_number&app_absent=0";
                       window.open(urlToOpen, "_blank");
                     } else {
                       window.location.href =
